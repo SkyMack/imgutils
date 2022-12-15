@@ -1,0 +1,5 @@
+# Ignore coverage reports
+coverage.out
+
+# Ignore test output
+testdata/output/*.png
