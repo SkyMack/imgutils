@@ -1,4 +1,4 @@
-package imgutil
+package imgutils
 
 import (
 	"encoding/hex"
