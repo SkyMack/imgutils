@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	errInvalidFormat = errors.New("invalid RGB hex code")
+	ErrInvalidFormat = errors.New("invalid RGB hex code")
 )
 
 // IsEmptyPixel returns true if the pixel at the given point in img has an alpha value of 0
@@ -30,7 +30,7 @@ func AddBorders(img *image.NRGBA, colr color.Color, borderWidth int, aThresh uin
 func ParseHexColor(s string) (colr color.NRGBA, err error) {
 	colr.A = 0xff
 	if len([]rune(s)) != 6 {
-		return colr, errInvalidFormat
+		return colr, ErrInvalidFormat
 	}
 	colrBytes, err := hex.DecodeString(s)
 	if err != nil {
