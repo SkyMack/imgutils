@@ -7,7 +7,7 @@ go get -u github.com/SkyMack/imgutils
 ```
 
 # Usage
-Some example code snippets (incomelete):
+Some example code snippets (incomplete):
 ```go
 	import (
 		"fmt"
